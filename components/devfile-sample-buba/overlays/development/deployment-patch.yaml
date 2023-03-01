@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-buba
+  namespace: halawren-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:a78746a9d1eb0c789d7b216b6eb5b9be9ab52403df221e5f3f06f0bce58e7613
+        name: my-nodejs
+        resources: {}
+status: {}
