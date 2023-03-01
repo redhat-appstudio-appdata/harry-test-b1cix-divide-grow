@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-buba
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:b1cix-devfile-sample-buba
+      - image: quay.io/redhat-appstudio/user-workload@sha256:a78746a9d1eb0c789d7b216b6eb5b9be9ab52403df221e5f3f06f0bce58e7613
         name: my-nodejs
         ports:
         - containerPort: 3001
